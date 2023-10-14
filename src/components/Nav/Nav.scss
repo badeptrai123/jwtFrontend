@@ -1,0 +1,57 @@
+.nav-header {
+  .bg-header {
+    background: #20232a;
+  }
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #61dafb;
+    &:hover {
+      color: #61dafb;
+    }
+    img {
+      color: #61dafb !important;
+      animation: spinner-logo infinite 10s linear;
+    }
+    @keyframes spinner-logo {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .title {
+      margin-left: 7px;
+    }
+  }
+  .navbar-nav {
+    a {
+      color: white;
+      &:hover {
+        color: #61dafb;
+      }
+    }
+    .nav-link {
+      &.active {
+        color: #61dafb;
+        border-bottom: 5px solid;
+        margin-bottom: -8px;
+      }
+    }
+  }
+  .show {
+    &.dropdown {
+      .show {
+        color: #61dafb !important;
+      }
+    }
+  }
+  .dropdown-item {
+    color: #20232a !important;
+    &:hover {
+      color: #116cc6 !important;
+    }
+  }
+}
